@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
         moveInput = moveAction.ReadValue<Vector2>();
         //Y toma el valor del movimiento lateral para mover al personaje horizontalmente, de acuerdo a la velocidad del personaje.
         transform.Translate(Vector3.right * moveInput.x * Time.deltaTime * speed);
+        transform.Translate(Vector3.forward * moveInput.y * Time.deltaTime * speed);
 
 
         if (fireAction.triggered)
