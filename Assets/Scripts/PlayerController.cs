@@ -56,8 +56,10 @@ public class PlayerController : MonoBehaviour
         }
         //Recibe la entrada del movimiento del jugador
         moveInput = moveAction.ReadValue<Vector2>();
+
         //Y toma el valor del movimiento lateral para mover al personaje horizontalmente, de acuerdo a la velocidad del personaje.
         transform.Translate(Vector3.right * moveInput.x * Time.deltaTime * speed);
+        //Z toma el valor del movimiento lateral para mover al personaje verticalmente, de acuerdo a la velocidad del personaje.
         transform.Translate(Vector3.forward * moveInput.y * Time.deltaTime * speed);
 
 
