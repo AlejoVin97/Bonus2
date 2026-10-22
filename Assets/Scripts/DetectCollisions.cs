@@ -15,7 +15,20 @@ public class DetectCollisions : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
-        Destroy(other.gameObject);
+        string objectType = other.gameObject.tag;
+        switch(objectType){
+            case ("Enemy"):
+                Destroy(gameObject);
+                Destroy(other.gameObject);
+                Debug.Log("Player scored!");
+                break;
+            case ("Player"):
+                Debug.Log("Player received damage");
+                break;
+            default:
+                Debug.Log("Undefined collision tag behavior");
+                break;
+    }
+        
     }
 }

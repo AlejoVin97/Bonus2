@@ -472,6 +472,7 @@ GameObject:
   - component: {fileID: 5954884919767510069}
   - component: {fileID: 5316577362689628566}
   - component: {fileID: 7999947724786742729}
+  - component: {fileID: -6238263749011016911}
   - component: {fileID: 5452365051788249422}
   m_Layer: 0
   m_Name: Enemy_Foxnemy
@@ -554,6 +555,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378f9b10a81464143a138e9c2e680933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!114 &-6238263749011016911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3591710643565937466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591ffa56121e2c04882caff31ebcbae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!65 &5452365051788249422
 BoxCollider:
   m_ObjectHideFlags: 0

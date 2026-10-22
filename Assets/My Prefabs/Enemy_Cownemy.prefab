@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 4041970672699214499}
   - component: {fileID: 4722266871708725625}
   - component: {fileID: 1958250310602540562}
+  - component: {fileID: -337024927800659249}
   - component: {fileID: -5986670836576554106}
   m_Layer: 0
   m_Name: Enemy_Cownemy
@@ -242,6 +243,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378f9b10a81464143a138e9c2e680933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!114 &-337024927800659249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799484572295079454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591ffa56121e2c04882caff31ebcbae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!65 &-5986670836576554106
 BoxCollider:
   m_ObjectHideFlags: 0
