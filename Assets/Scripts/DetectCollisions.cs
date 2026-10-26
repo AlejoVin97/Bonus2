@@ -15,13 +15,14 @@ public class DetectCollisions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnTriggerEnter(Collider other)
     {
 
         string objectType = other.gameObject.tag;
-        switch(objectType){
+        switch (objectType)
+        {
             case ("Enemy"):
                 Destroy(gameObject);
                 Destroy(other.gameObject);
@@ -41,3 +42,5 @@ public class DetectCollisions : MonoBehaviour
 
 
     }
+}
+
