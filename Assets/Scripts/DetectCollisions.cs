@@ -15,12 +15,31 @@ public class DetectCollisions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnTriggerEnter(Collider other)
     {
+
+        string objectType = other.gameObject.tag;
+        switch (objectType)
+        {
+            case ("Enemy"):
+                Destroy(gameObject);
+                Destroy(other.gameObject);
+                Debug.Log("Player scored!");
+                break;
+            case ("Player"):
+                Debug.Log("Player received damage");
+                break;
+            default:
+                Debug.Log("Undefined collision tag behavior");
+                break;
+
+        }
         Destroy(gameObject);
         Destroy(other.gameObject);
         gameManager.AddScore(1);
+
     }
 }
+
