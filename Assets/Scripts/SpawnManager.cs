@@ -10,7 +10,7 @@ public class SpawnManager : MonoBehaviour
     //Recibe entrada para iniciar el juego
     public InputAction spawnAction;
     //Amplitud del rango en el eje X positivo y negativo en el cual pueden generarse enemigos
-    private float spawnRangeX = 19.0f;
+    private float spawnRangeX = 15.0f;
     //Maximo valor en el eje Z donde pueden generarse enemigos
     private float maxPosZ = 18.0f;
     //Minimo valor en el eje Z donde pueden generarse enemigos
@@ -36,22 +36,10 @@ public class SpawnManager : MonoBehaviour
         spawnAction.Enable();
         InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval);
         InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval - 0.5f);
-        InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval - 0.3f);
+        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        /*
-        //Al detectar la entrada para generar enemigos
-        if (spawnAction.triggered)
-        {
-            //Genera un animal aleatorio en una posicion aleatoria en el eje X pero estatica en altura y profunda
-            SpawnRandomAnimal();
-        }
-        */
-    }
-  
+      
     void SpawnRandomAnimal()
     {
         //se utiliza un indice para acceder a un modelo de animal especifico, y se le asigna un valor aleatorio (entre los valores que se han asignado)

@@ -12,13 +12,12 @@ GameObject:
   - component: {fileID: 4544475032983956294}
   - component: {fileID: 5270981347541546411}
   - component: {fileID: 7202459114481215620}
-  - component: {fileID: -2268792454028438439}
+  - component: {fileID: 6573093661425250626}
   - component: {fileID: -8325138470279698278}
   - component: {fileID: 9092343864572340385}
-  - component: {fileID: -2839723240770240562}
   m_Layer: 0
   m_Name: Attack_Food
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 40
---- !u!114 &-2268792454028438439
+--- !u!114 &6573093661425250626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,7 +116,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1526468774016676347}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 378f9b10a81464143a138e9c2e680933, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c52ee72091692143869a36cdefe1fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!65 &-8325138470279698278
@@ -168,15 +167,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-2839723240770240562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526468774016676347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 591ffa56121e2c04882caff31ebcbae3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
