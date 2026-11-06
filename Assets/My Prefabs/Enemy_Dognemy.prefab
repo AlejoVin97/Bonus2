@@ -248,8 +248,8 @@ GameObject:
   - component: {fileID: 3100169007893852437}
   - component: {fileID: 609405418448767584}
   - component: {fileID: 5319040575278890894}
-  - component: {fileID: 3259181777821556281}
-  - component: {fileID: -6494766001188121472}
+  - component: {fileID: -5456879718828277333}
+  - component: {fileID: -8889838539139472465}
   - component: {fileID: -6532163323635150236}
   m_Layer: 0
   m_Name: Enemy_Dognemy
@@ -344,8 +344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3ccafc9d9e2fe44abbe84c1732a0a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: 20
---- !u!114 &3259181777821556281
+  speed: 9.4
+--- !u!114 &-5456879718828277333
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -354,10 +354,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 585869138446540857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 378f9b10a81464143a138e9c2e680933, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c52ee72091692143869a36cdefe1fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
---- !u!114 &-6494766001188121472
+  xBorder: 20
+--- !u!114 &-8889838539139472465
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -366,9 +367,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 585869138446540857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 591ffa56121e2c04882caff31ebcbae3, type: 3}
+  m_Script: {fileID: 11500000, guid: 81e62e9a8a22fac478a927ce940e28f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
+  objectHp: 1
 --- !u!65 &-6532163323635150236
 BoxCollider:
   m_ObjectHideFlags: 0
